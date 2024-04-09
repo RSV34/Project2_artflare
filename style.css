@@ -85,7 +85,7 @@ body{
 }
 .Logo{
     height:2.46vw;
-    margin-left: 8.21vw;
+    margin-left: 6vw;
 }
 .a1{
     margin-left: 5vw;
@@ -95,6 +95,13 @@ body{
 }
 .a3{
     visibility: hidden;
+}
+.n{
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+    background-color: #eee1;
+    width: 95%;
 }
 nav .a ul li a{
     color:black;
@@ -119,7 +126,7 @@ nav .a ul li{
 }
 .b{
     width:50%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 5%;
 }
 .b1{
@@ -331,18 +338,103 @@ nav .a ul li{
     margin-top: 1.23vw;
 }
 @media screen and (max-width:992px) {
-    .banner1{
-        
+    
+    /* Banner2 */
+    .banner2{
+        height: auto;
+    }
+    .c{
+        top:-4vh;
+        flex-direction: column;
+        justify-content: center;
+        height:auto;
+        width: 90%;
+    }
+    .c11{
+        font-size: 3.43vh;
+    }
+    .c12{
+        font-size: 6vh;
+        line-height: 3vh;
+    }
+    .c21{
+        margin:0vh 0px;
+        flex-direction: column;
+    }
+    .c21 input{
+        width:90%;
+        margin:3vh 0px;
+    }
+    .c21 input::-webkit-input-placeholder{
+        font-size: 2.5vh;
+    }
+    .c22{
+        font-size: 2.5vh;
+    }
+    .c3{
+        display: flex;
+        justify-content: center;
+    }
+    #btn2{
+        margin-bottom: 2vh;
+    }
+    .image_a1{
+        height: 3vh ;
+    }
+    .ca{
+        flex-direction: column;
+    }
+    .ca_1{
+        font-size: 6vh;
+    }
+    #b1 .ca_1{
+        line-height: 4vh;
+    }
+    .c_1{
+        width: 99%;
+        padding: 2vh;
+    }
+    #ca1{
+        display: flex;
+        font-size:5vh;
+        border: none;
+    }
+    #ca1 p{
+       line-height: 4vh; 
+    }
+    #ca11{
+        font-size: 3vh ;
+        width:90%;
+    }
+    #ca12{
+        width:90%;
+    }
+    .image_5{
+        position: relative;
+        left: -3vh;
+        height:60vh;
+        width:50vh;
+        padding: 0;
+    }
+    .image_a1{
+        position: absolute;
+        height: 150vh;
+        width: 20vh;
+        top:95vh; 
+    }
+    .image_a2{
+        position: absolute;
+        height: 150vh;
+        width: 40vh;
+        top:100vh;
+    }
+    .image_a4{
+        height:270vh;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:766px) {
     .banner1{
-
-    }
-
-}
-@media screen and (max-width:600px) {
-    .banner1{
+        position: relative;
         height:90vh ;
     }
     .image1{
@@ -364,11 +456,14 @@ nav .a ul li{
         height:5.14vh;
     }
     .a{
+        position: fixed;
         width: 100%;
+        height: 100vh;
         background-color: #ef375d;
-        position:fixed;
         right:0px;
         top:0px;
+        z-index: 1;
+        overflow: scroll;
     }
     .a1{
         margin-top: 3.43vh;
@@ -398,7 +493,215 @@ nav .a ul li{
         visibility: hidden;
     }
     .b{
+        margin-top: 20%;
+        width:90%;
+    }
+    .b1{
+        font-size: 8vh;
+    }
+    .b1 p{
+        line-height: 8vh;
+    }
+    .b2{
+        font-size: 3.43vh;
+    }
+    .button1{
+        padding:3.08vh 3.43vh;
+        font-size: 1.71vh;
+        letter-spacing: 0.6vh;
+    }
+    /* banner2 ---------------- */
+    .banner2{
+        height: auto;
+    }
+    .c{
+        top:-4vh;
+        flex-direction: column;
+        justify-content: center;
+        height:auto;
+        width: 90%;
+    }
+    .c11{
+        font-size: 3.43vh;
+    }
+    .c12{
+        font-size: 6vh;
+        line-height: 3vh;
+    }
+    .c21{
+        margin:0vh 0px;
+        flex-direction: column;
+    }
+    .c21 input{
+        width:90%;
+        margin:3vh 0px;
+    }
+    .c21 input::-webkit-input-placeholder{
+        font-size: 2.5vh;
+    }
+    .c22{
+        font-size: 2.5vh;
+    }
+    .c3{
+        display: flex;
+        justify-content: center;
+    }
+    #btn2{
+        margin-bottom: 2vh;
+    }
+    .image_a1{
+        height: 3vh ;
+    }
+    .ca{
+        flex-direction: column;
+    }
+    .ca_1{
+        font-size: 6vh;
+    }
+    #b1 .ca_1{
+        line-height: 4vh;
+    }
+    .c_1{
+        width: 99%;
+        padding: 2vh;
+    }
+    #ca1{
+        display: flex;
+        flex-direction: column;
+        font-size:5vh;
+        border: none;
+    }
+    #ca1 p{
+       line-height: 4vh; 
+    }
+    #ca11{
+        font-size: 3vh ;
+        width:90%;
+    }
+    #ca12{
+        width:90%;
+    }
+    .image_5{
+        position: relative;
+        left: -3vh;
+        height:60vh;
+        width:50vh;
+        padding: 0;
+    }
+    .image_a1{
+        position: absolute;
+        height: 150vh;
+        width: 20vh;
+        top:195vh; 
+    }
+    .image_a2{
+        position: absolute;
+        height: 150vh;
+        width: 40vh;
+        top:200vh;
+    }
+    .image_a4{
+        height:400vh;
+    }
+    /* Banner 3-------------- */
+    .image_a31{
+        display: none;
+      }
+      .image_a3{
+        display: block;
+        position:relative;
+        width:100%;
+        height:70vh;
+        z-index: 4;
+      }
+      .d1{
+        position: relative;
+        top: -70vh;
+        left: 0vh;
+        z-index: 5;
         width:99%;
+        border: none;
+    }
+    .d1 .d11{
+        color: white;
+        font-size: 8vh;
+        line-height: 6vh;
+    }
+    #btn3{
+        width:45vh;
+    }
+    #btn3 p{
+        font-size: 2vh;
+    }
+    #btn3 i{
+        font-size: 2vh;
+        margin-top: 2.7vh;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .banner1{
+        position: relative;
+        height:90vh ;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        right: 3.3vw;
+        height: 133.7vh;
+        bottom:-37vh;
+    }
+    .image3{
+        height:102.9vh;
+        bottom: -3.4vh;
+    }
+    .image4,.image5,.image6{
+        height:90vh;
+    }
+    .Logo{
+        height:5.14vh;
+    }
+    .a{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #ef375d;
+        right:0px;
+        top:0px;
+        z-index: 1;
+        overflow: scroll;
+    }
+    .a1{
+        margin-top: 3.43vh;
+    }
+    .a2{
+        padding: 1.71vh 0px;
+        margin-left: 1.71vh;
+    }
+    .a3{
+        position: absolute;
+        top:0px;
+        right: 20px;
+    }
+   nav .a ul li a{
+        font-size: 4vh;
+    }
+    nav .a .a2 li i,nav .a .a2 li p{
+        font-size:3.4vh ;
+    }
+    nav .a .a3 li i{
+        visibility: visible;
+        font-size: 5.14vh;
+        color: #fff;
+        cursor: pointer;
+    }
+    .image1{
+        visibility: hidden;
+    }
+    .b{
+        margin-top: 30%;
+        width:90%;
     }
     .b1{
         font-size: 8vh;
@@ -419,25 +722,26 @@ nav .a ul li{
         height: auto;
     }
     .c{
-        top:0;
+        top:-4vh;
         flex-direction: column;
         justify-content: center;
         height:auto;
-        width: auto;
+        width: 90%;
     }
     .c11{
         font-size: 3.43vh;
     }
     .c12{
-        font-size: 8vh;
-        line-height: 5vh;
+        font-size: 6vh;
+        line-height: 3vh;
     }
     .c21{
+        margin:0vh 0px;
         flex-direction: column;
     }
     .c21 input{
-        width:100%;
-        margin:9px 0px;
+        width:90%;
+        margin:3vh 0px;
     }
     .c21 input::-webkit-input-placeholder{
         font-size: 2.5vh;
@@ -449,15 +753,17 @@ nav .a ul li{
         display: flex;
         justify-content: center;
     }
+    #btn2{
+        margin-bottom: 2vh;
+    }
     .image_a1{
         height: 3vh ;
-        width:
     }
     .ca{
         flex-direction: column;
     }
     .ca_1{
-        font-size: 8vh;
+        font-size: 6vh;
     }
     #b1 .ca_1{
         line-height: 4vh;
@@ -484,10 +790,9 @@ nav .a ul li{
         position: relative;
         left: -3vh;
         height:60vh;
-        width:47vh;
+        width:50vh;
         padding: 0;
     }
-    /* Banner 3 */
     .image_a1{
         position: absolute;
         height: 150vh;
@@ -511,20 +816,21 @@ nav .a ul li{
     display: block;
     position:relative;
     width:100%;
+    height:70vh;
     z-index: 4;
   }
   .d1{
     position: relative;
-    top: 0vh;
+    top: -70vh;
     left: 0vh;
     z-index: 5;
     width:99%;
     border: none;
-
 }
 .d1 .d11{
-    color: #175ead;
-    font-size: 9vh;
+    color: white;
+    font-size: 8vh;
+    line-height: 6vh;
 }
 #btn3{
     width:45vh;
